@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>エディ</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="assets/styles.css">
+
+    <style>
+        .social-icon {
+            transition: transform 0.3s ease, filter 0.3s ease;
+        }
+        .social-icon:hover {
+            transform: scale(1.2);
+            filter: brightness(1.4);
+        }
+    </style>
+    </head>
+
+<body>
+  <video autoplay muted loop id="bgVideo">
+    <source src="assets/fondo.mp4" type="video/mp4" />
+  </video>
+
+  <div class="content">
+      <img src="assets/profile.jpg" alt="Foto de Perfil" class="avatar" />
+      <h1>エディ</h1>
+            <p class="location">📍 Texas</p>
+
+      
+
+</div>
+
+      
+
+<div class="social-text-links">
+  <div style="text-align: center;">
+    <a href="https://instagram.com/tu_usuario" target="_blank"><img src='assets/instagram_logo.png' alt='Instagram' width='40'></a>
+    <a href="https://tiktok.com/@tu_usuario" target="_blank"><img src='assets/tiktok_logo.png' alt='TikTok' width='40'></a>
+    <a href="https://twitch.tv/tu_usuario" target="_blank"><img src='assets/twitch_logo.png' alt='Twitch' width='40'></a>
+  </div>
+  <div style="margin-top: 10px; text-align: center;">
+    <a href="https://guns.lol" target="_blank"><img src="assets/guns-icon.png" alt="guns.lol" style="height: 42px;"></a>
+    <a href="https://strawpage.com" target="_blank"><img src="assets/straw-icon.png" alt="strawpage" style="height: 42px;"></a>
+  <div style="margin-top: 60px; text-align: center;">
+  <iframe width="560" height="315" 
+    src="https://www.youtube.com/embed/AJdTBPuZkHU" 
+    title="YouTube video player" 
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen>
+  </iframe>
+
+
+  <audio id="bgAudio" autoplay loop>
+    <source src="assets/tiktokio.com_CH1sIgeytfiuNqzjiqPp.mp3" type="audio/mp3">
+  </audio>
+
+  <div class="volume-control">
+    <input type="range" id="volumeRange" min="0" max="1" step="0.01" value="1" title="Volumen">
+  </div>
+
+  <script>
+    const audio = document.getElementById("bgAudio");
+    const volume = document.getElementById("volumeRange");
+    volume.addEventListener("input", () => {
+      audio.volume = volume.value;
+    });
+  </script>
+
+<div style="margin-top: 10px; text-align: center;">
+    
+  <div style="margin-top: 10px;">
+    
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+    <div style="text-align: center; margin-top: 60px;">
+        <h2 style="color: white;">My game</h2>
+        <a href="https://www.roblox.com/es/games/100931585513367/unnamed" target="_blank">
+            <img src="assets/game_image.jpg" alt="My Game" style="max-width: 400px; width: 100%; border-radius: 10px; transition: transform 0.3s;" 
+            onmouseover="this.style.transform='scale(1.05)'" 
+            onmouseout="this.style.transform='scale(1)'">
+        </a>
+    </div>
+</body>
+
+</html>
+
